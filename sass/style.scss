@@ -24,6 +24,8 @@ body{
 		height: auto;
 	}
 
+
+
 	.header{
 		text-align: center;
 		span{
@@ -31,6 +33,7 @@ body{
 		}
 	}
 
+	
 	.box2{
 		width: 95%;
 		background-color: white;
@@ -68,6 +71,19 @@ body{
 				margin: 15px 0;
 			}
 		}
+
+		.nav_produtos{
+			background-color: #F3F1F2;
+
+			ul{
+				display: inline-flex;
+				margin-left: -15px !important;
+				li{
+					margin-right: 10px;
+					display: table;
+				}
+			}
+		}
 	}
 
 	.right{
@@ -75,7 +91,9 @@ body{
 	}
 
 	.box-table{
-		padding: 10px;
+		padding: 10px 2em;
+		overflow: auto;
+		height: 350px;
 	}
 
 	.table{
@@ -116,7 +134,7 @@ body{
 
 		h2{
 			background-color: #F3F1F2;
-			padding: 1.2em;
+			padding: 1.2em 2em;
 			font-size:15px;
 			color: #666;
 			span{
@@ -133,3 +151,4 @@ body{
 		}
 	}
 }
+.linha{margin-right: -15px;}

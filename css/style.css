@@ -51,10 +51,20 @@ body {
       .container .box2 .error p.middle {
         vertical-align: middle;
         margin: 15px 0; }
+    .container .box2 .nav_produtos {
+      background-color: #F3F1F2; }
+      .container .box2 .nav_produtos ul {
+        display: inline-flex;
+        margin-left: -15px !important; }
+        .container .box2 .nav_produtos ul li {
+          margin-right: 10px;
+          display: table; }
   .container .right {
     padding-right: 0 !important; }
   .container .box-table {
-    padding: 10px; }
+    padding: 10px 2em;
+    overflow: auto;
+    height: 350px; }
   .container .table {
     width: 100%;
     max-width: 100%;
@@ -76,7 +86,7 @@ body {
     padding: 0; }
   .container article h2 {
     background-color: #F3F1F2;
-    padding: 1.2em;
+    padding: 1.2em 2em;
     font-size: 15px;
     color: #666; }
     .container article h2 span {
@@ -88,5 +98,8 @@ body {
       text-align: right; }
   .container article .grafico {
     padding: 10px; }
+
+.linha {
+  margin-right: -15px; }
 
 /*# sourceMappingURL=style.css.map */
