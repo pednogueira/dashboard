@@ -18,7 +18,6 @@
 		<section class="header" id="header">
 			<div class="col12 linha">
 				<div id="inf_header">
-
 				</div>
 			</div>
 		</section>
@@ -33,55 +32,26 @@
 				</div>
 				<div class="box2">
 					<nav class="nav_produtos">
-						<ul>
-							<li><a href="">teste</a></li>
-							<li><a href="">teste</a></li>
-							<li><a href="">teste</a></li>
-							<li><a href="">teste</a></li>
-							<li><a href="">teste</a></li>
+						<ul class="produtos">
+							<li class="active"><button class="todos" value="submarino">Submarino</button></li>
+							<li class="active"><button class="todos" value="lojas_americanas">Lojas</button></li>
+							<li class="active"><button class="todos" value="sou_barato">Sou Barato</button></li>
+							<li class="active"><button class="todos" value="shoptime">Shoptime</button></li>
+							<li class="active"><button class="todos" value="brasil_ctb2_w">Brasil B2W</button></li>
 						</ul>
 					</nav>
 					<div class="grafico">
-						<table class="table">
+						<table class="table" id="lojas">
 							<thead>
 								<tr>
-									<th>Estado</th>
-									<th>Cidade</th>
-									<th>Venda</th>
-									<th>Valor total</th>
+									<th>Nome</th>
+									<th>vendidos</th>
+									<th>Total</th>
+									<th>SKU</th>
+									<th>Posição</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>Rio de Janeiro</td>
-									<td>Petrópolis</td>
-									<td>12</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>Rio de Janeiro</td>
-									<td>Petrópolis</td>
-									<td>12</td>
-									<td>R$2.000,00</td>
-								</tr>
-								<tr>
-									<td>Rio de Janeiro</td>
-									<td>Petrópolis</td>
-									<td>12</td>
-									<td>R$2.000,00</td>
-								</tr>
-								<tr>
-									<td>Rio de Janeiro</td>
-									<td>Petrópolis</td>
-									<td>12</td>
-									<td>R$2.000,00</td>
-								</tr>
-								<tr>
-									<td>Rio de Janeiro</td>
-									<td>Petrópolis</td>
-									<td>12</td>
-									<td>R$2.000,00</td>
-								</tr>
 							</tbody>
 						</table>
 					</div>
