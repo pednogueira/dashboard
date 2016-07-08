@@ -12,7 +12,7 @@
 	<div class="container">
 		<header>
 			<div class="col12">
-				<!-- <img src="img/logo1.png"> -->
+				<img src="img/logo1.png">
 			</div>
 		</header>
 		<section class="header" id="header">
@@ -34,10 +34,24 @@
 					<nav class="nav_produtos">
 						<ul class="produtos">
 							<li class="active"><button class="todos" value="submarino">Submarino</button></li>
-							<li class="active"><button class="todos" value="lojas_americanas">Lojas</button></li>
-							<li class="active"><button class="todos" value="sou_barato">Sou Barato</button></li>
-							<li class="active"><button class="todos" value="shoptime">Shoptime</button></li>
-							<li class="active"><button class="todos" value="brasil_ctb2_w">Brasil B2W</button></li>
+							<li>
+								<button class="todos" value="lojas_americanas">
+									Lojas Americanas
+								</button>
+							</li>
+							<li>
+								<button class="todos" value="sou_barato">
+									Sou Barato
+								</button>
+							</li>
+							<li>
+								<button class="todos" value="shoptime">Shoptime</button>
+							</li>
+							<li>
+								<button class="todos" value="brasil_ctb2_w">
+									Brasil B2W
+								</button>
+							</li>
 						</ul>
 					</nav>
 					<div class="grafico">

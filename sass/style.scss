@@ -24,15 +24,14 @@ body{
 		height: auto;
 	}
 
-
-
 	.header{
 		text-align: center;
 		span{
 			font-size: 2vw;
 		}
 	}
-
+	background: none;
+	border: none;
 	
 	.box2{
 		width: 95%;
@@ -74,6 +73,7 @@ body{
 
 		.nav_produtos{
 			background-color: #F3F1F2;
+			margin-top: 27px;
 
 			ul{
 				display: inline-flex;
@@ -96,6 +96,11 @@ body{
 						font-weight: bold;
 					}
 				}
+			}
+
+			button{
+				background: none;
+				border: none;
 			}
 		}
 	}

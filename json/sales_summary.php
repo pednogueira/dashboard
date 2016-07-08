@@ -1,1 +1,1 @@
-{"faturamento":"227634.11","pedidos":"1374","ticket_medio":123.0,"ticket_medio_final":66.89}
+{"Faturamento":"227634.11","Pedidos":"1374","Ticket Médio":123.0,"Ticket Médio Final":66.89}

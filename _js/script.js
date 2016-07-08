@@ -1,17 +1,29 @@
 
-$.getJSON('json/sales_summary.php', function(data){
-	var obj = data
-	var trHTML;
+$(document).ready(function(){
+	$.getJSON('json/sales_summary.php', function(data){
+		var obj = data
+		var trHTML;
 
-	$.each(data, function(i, item){
-		trHTML += "<div class='col2'><div class='box2'><p>"+i+"</p><span>R$ "+item+"</span></div></div>";
+		$.each(data, function(i, item){
+			trHTML += "<div class='col2'><div class='box2'><p>"+i+"</p><span>R$ "+item+"</span></div></div>";
+		});
+		$('#inf_header').append(trHTML);
 	});
-	$('#inf_header').append(trHTML);
-});
 
-$.getJSON('json/vendas.php', function(data){
+	$.getJSON('json/error.php', function(data){
+		var obj = data
+		var trHTML;
 
-	var obj = data;
+		$.each(data, function(i, item){
+			trHTML += "<div class='col2'><div class='box2'><p>"+i+"</p><span>"+item+"</span></div></div>";
+		});
+		$('#inf_header').append(trHTML);
+	});
+
+
+	$.getJSON('json/vendas.php', function(data){
+
+		var obj = data;
 	// console.log(data);
 	var trHTML;
 
@@ -27,41 +39,42 @@ $.getJSON('json/vendas.php', function(data){
 });
 
 
-$('.todos').click(function(){
 
-	var valor = $(this).val();
+	$('.todos').click(function(){
 
-	$.getJSON('json/top_products.php', function(data){
-		var empresas = data.marketplaces;
-		var liHTML;
+		var valor = $(this).val();
 
-		if(valor == "submarino"){
-			produtos = data.products.submarino;
-		}else if(valor == "lojas_americanas"){
-			produtos = data.products.lojas_americanas;
-		}else if(valor == "shoptime"){
-			produtos = data.products.shoptime;
-		}else if(valor == "brasil_ctb2_w"){
-			produtos = data.products.brasil_ctb2_w;
-		}else{
-			produtos = data.products.sou_barato;
-		}
+		$.getJSON('json/top_products.php', function(data){
+			var empresas = data.marketplaces;
+			var liHTML;
 
-		console.log(this);
+			if(valor == "submarino"){
+				produtos = data.products.submarino;
+			}else if(valor == "lojas_americanas"){
+				produtos = data.products.lojas_americanas;
+			}else if(valor == "shoptime"){
+				produtos = data.products.shoptime;
+			}else if(valor == "brasil_ctb2_w"){
+				produtos = data.products.brasil_ctb2_w;
+			}else{
+				produtos = data.products.sou_barato;
+			}
 
-		$.each(produtos, function(i, item){
-			console.log(item.name);
+			console.log(this);
 
-			var total = "R$ " + item.total_money.toPrecision(5);
+			$.each(produtos, function(i, item){
+				console.log(item.name);
 
-			liHTML += "<tr><td>"+item.name+"</td><td>"+item.qtd_sold+"</td><td>"+total+"</td><td>"+item.sku+"</td><td>"+item.position+"</td></tr>";
+				var total = "R$ " + item.total_money.toPrecision(5);
 
+				liHTML += "<tr><td>"+item.name+"</td><td>"+item.qtd_sold+"</td><td>"+total+"</td><td>"+item.sku+"</td><td>"+item.position+"</td></tr>";
+
+			});
+			$('#lojas tbody').html(liHTML);
 		});
-		$('#lojas tbody').html(liHTML);
+
 	});
-
 });
-
 
 
 
